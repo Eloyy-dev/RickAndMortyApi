@@ -1,0 +1,260 @@
+* {
+  font-family: 'Unica One', cursive;
+
+  box-sizing: border-box;
+}
+
+#Tittle {
+  font-family: 'Oswald', sans-serif;
+  color: #11b0ca;
+  text-shadow: 3px 2px 5px #C5D859;
+  font-size: 50px;
+  -webkit-text-stroke: 2px #075966
+}
+
+.Banner {
+  background-image: url(https://cdn.shopify.com/s/files/1/0346/8063/5529/collections/rick-morty-collection-banner_1944x.jpg?v=1590095280);
+  height: 390px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.input {
+  width: 60%;
+  height: 80px;
+  font-size: 40px;
+  color: #00C9AF;
+}
+
+.btn {
+  height: 80px;
+  width: 100px;
+  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+  background-color: #7d5d3b;
+  border-radius: 3px;
+  border: 1px solid #54381e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #4d3534;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.Search {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  justify-content: center;
+  width: 60%;
+}
+
+.Info-dimension {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 60%;
+  background: rgba(99, 92, 42, 0.9);
+  border-radius: 30px;
+  justify-content: space-evenly;
+  backdrop-filter: blur(2px);
+  gap: 20px;
+}
+
+.Info-dimension p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #00C9AF;
+}
+
+.prop {
+  color: #2c2005;
+}
+
+.resident-grid {
+  margin-top: 50px;
+  width: 100%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 10px;
+}
+
+.card-resident {
+  background: #91754E;
+  width: 500px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-radius: 0px 101px 101px 0px;
+  -moz-border-radius: 0px 101px 101px 0px;
+  -webkit-border-radius: 0px 101px 101px 0px;
+  border: 0px solid #000000;
+  gap: 10px;
+  -webkit-box-shadow: 0px 0px 9px 2px #000000;
+  box-shadow: 0px 0px 9px 2px #000000;
+  padding-bottom: 15px;
+}
+
+.card-resident p {
+  font-size: 20px;
+
+}
+
+.card-resident h1 {
+  font-size: 18px;
+  text-decoration: underline black;
+}
+
+.card-first {
+  width: 40%;
+  text-align: center;
+}
+
+.card-first h1 {
+  height: 20%;
+  text-align: center;
+  margin: 0;
+}
+
+.card-second {
+  width: 60%;
+}
+
+
+.img-resident {
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  -webkit-box-shadow: 5px 5px 6px -1px #000000;
+  box-shadow: 3px 3px 4px -1px #000000;
+
+}
+
+@media (max-width:1400px) {
+  .resident-grid {
+    width: 100%;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  .Info-dimension {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 90%;
+    background: rgba(99, 92, 42, 0.9);
+    border-radius: 30px;
+    justify-content: space-evenly;
+    backdrop-filter: blur(2px);
+  }
+
+  .Info-dimension p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .Search {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .input {
+    width: 60%;
+    height: 80px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width:700px) {
+  #Tittle {
+    font-family: 'Oswald', sans-serif;
+    color: #11b0ca;
+    text-shadow: 3px 2px 5px #C5D859;
+    font-size: 40px;
+    -webkit-text-stroke: 2px #075966
+  }
+
+  .resident-grid {
+    width: 100%;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  .Search {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .input {
+    width: 60%;
+    height: 80%;
+    font-size: 40px;
+  }
+
+  .btn {
+    height: 80%;
+    width: 100px;
+    box-shadow: inset 0px 1px 0px 0px #a6827e;
+    background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+    background-color: #7d5d3b;
+    border-radius: 3px;
+    border: 1px solid #54381e;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #4d3534;
+    padding: 0;
+  }
+
+  .Info-dimension {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    background: rgba(99, 92, 42, 0.9);
+    border-radius: 30px;
+    justify-content: space-evenly;
+    backdrop-filter: blur(2px);
+    gap: 10px;
+  }
+
+  .Info-dimension p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #00C9AF;
+    margin: 0px;
+  }
+}
