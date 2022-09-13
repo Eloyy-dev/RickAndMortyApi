@@ -3,7 +3,9 @@
 
   box-sizing: border-box;
 }
-
+body{
+  background: #5D4520;
+}
 #Tittle {
   font-family: 'Oswald', sans-serif;
   color: #11b0ca;

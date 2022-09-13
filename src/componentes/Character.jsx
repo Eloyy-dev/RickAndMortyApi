@@ -18,9 +18,9 @@ const Character = ({ url }) => {
       <div className='resident-grid'>
         {
           characters.map(users => (
-            <>
-              <ResidentSingle url={users} key={users} />
-            </>
+
+            <ResidentSingle url={users} key={users} />
+
           ))
         }
       </div>

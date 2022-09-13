@@ -24,7 +24,7 @@ function App() {
     setUrl(`https://rickandmortyapi.com/api/location/${text}`)
 
   }
-  document.body.style.background = "#5D4520"
+  
   // document.body.style.background = "rgb(42,29,8) linear-gradient(0deg, rgba(42,29,8,1) 0%, rgba(93,69,32,1) 100%);";
 
   return (

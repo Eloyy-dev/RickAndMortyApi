@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import '../App.css'
 import axios from 'axios'
 
-const ResidentSingle = ({ url, key }) => {
+const ResidentSingle = ({ url }) => {
 
   const [resident, setResident] = useState({})
   const [emojiHappy, setEmojiHappy] = useState(<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mood-happy" width={"24"} height="24" viewBox="0 0 24 24" strokeWidth={"1.5"} stroke="#00b341" fill="none" strokeLinecap='round' strokeLinejoin='round'>
@@ -28,21 +28,21 @@ const ResidentSingle = ({ url, key }) => {
 
 
   return (
-    <>
-      <div key={key} className='card-resident'>
-        <div className='card-first'>
-          <h1>{resident.name}</h1>
-          <img src={resident.image} alt="" className='img-resident' />
-        </div>
-        <div className='card-second'>
-          <p><b>Estado:</b>{resident.status}<span>{resident.status === "Alive" ? emojiHappy : emojiDead}</span></p>
-          <p><b>Origen:</b>{resident.origin?.name}</p>
-          <p><b>Episodios donde aparece:</b>{resident.episode?.length}</p>
 
-        </div>
+    <div className='card-resident'>
+      <div className='card-first'>
+        <h1>{resident.name}</h1>
+        <img src={resident.image} alt="" className='img-resident' />
+      </div>
+      <div className='card-second'>
+        <p><b>Estado:</b>{resident.status}<span>{resident.status === "Alive" ? emojiHappy : emojiDead}</span></p>
+        <p><b>Origen:</b>{resident.origin?.name}</p>
+        <p><b>Episodios donde aparece:</b>{resident.episode?.length}</p>
 
       </div>
-    </>
+
+    </div>
+
   );
 }
 
